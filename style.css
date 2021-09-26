@@ -1,0 +1,232 @@
+p {
+    text-align: center ;
+    font-family: 'Roboto', cursive;
+    border:2px solid #006fff ;
+    margin: 30px;
+    padding:5px;
+    border-radius:20px;
+    background-color:#03c2fc;
+    color: lime;
+    font-weight:bolder;
+}
+
+html, body {
+    display: table;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html[data='1'] { background-color: #222; }
+html[data='2'] { background-color: #000; }
+html[data='3'] { background-color: #f99; }
+html[data='4'] { background-color: #000; }
+
+select {
+    background-color: #eee;
+    border: 0;
+    box-shadow: 0 0 0 1px #555;
+    outline: 0;
+    margin: 0;
+    padding: 5px 15px;
+}
+
+.menu {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+}
+
+#m[data='1'] {
+    background-color: #222;
+    color: #999;
+}
+
+#m[data='2'] {
+    background-color: #000;
+    color: #777;
+}
+
+#m[data='3'] {
+    background-color: #f55;
+    box-shadow: 0 0 0 1px #800;
+    color: #fee;
+}
+
+#m[data='4'] {
+    background-color: #000;
+    box-shadow: 0 0 0 1px #080;
+    color: #fee;
+}
+
+.layout {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.layout > .clock {
+    background-color: #eee;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2vh #000, 0 0 2vh #000 inset;
+    height: 45vh;
+    margin: auto;
+    position: relative;
+    width: 45vh;
+}
+
+.layout > .clock[data='1'] {
+    background-color: #222;
+    box-shadow: 0 0 0 2vh #333, 0 0 2vh #000 inset;
+}
+
+.layout > .clock[data='2'] { background-color: #000; }
+
+.layout > .clock[data='3'] {
+    background-color: #fff;
+    box-shadow: 0 0 0 1vh #f44, 0 0 0 2vh #f66, 0 0 0 8vh #f77 inset;
+}
+
+.layout > .clock[data='4'] { background-color: #000; }
+
+.layout > .clock > .marks m {
+    background-color: #444;
+    border-radius: 0 0 50% 50%;
+    display: block;
+    height: 1vh;
+    left: 50%;
+    margin: -.5vh -.2vh;
+    position: absolute;
+    top: 50%;
+    width: .4vh;
+}
+
+.layout > .clock > .marks[data='1'] m { background-color: #888; }
+.layout > .clock > .marks[data='2'] m { background-color: #ccc; }
+.layout > .clock > .marks[data='3'] m { background-color: #f77; }
+.layout > .clock > .marks[data='4'] m { background-color: #4f4; }
+
+.layout > .clock > .digi m {
+    display: block;
+    font-size: 3.8vh;
+    font-weight: 300;
+    height: 1vh;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 1vh;
+}
+
+.layout > .clock > .digi[data='1'] m { color: #888; }
+.layout > .clock > .digi[data='2'] m { color: #ccc; }
+.layout > .clock > .digi[data='3'] m { color: #fff; }
+.layout > .clock > .digi[data='4'] m { color: #7f7; }
+
+.layout > .clock > .bg {
+    background-color: #ddd;
+    border-radius: 50%;
+    height: 6vh;
+    left: 50%;
+    margin: -3vh;
+    position: absolute;
+    top: 50%;
+    width: 6vh;
+}
+
+.layout > .clock > .bg[data='1'] {
+    background-color: #888;
+}
+
+.layout > .clock > .bg[data='2'] {
+    background-color: #f88;
+}
+
+.layout > .clock > .bg[data='3'] {
+    background-color: #f77;
+    box-shadow: 0 0 0 5vh #f77;
+}
+
+.layout > .clock > .bg[data='4'] {
+    background-color: #000;
+}
+
+.layout > .clock > .h-hand {
+    background-color: #ddd;
+    border-radius: 50% 50% .4vh .4vh;
+    box-shadow: 0 0 0 .18vh #000;
+    height: 20vh;
+    left: 50%;
+    margin: -10vh -.7vh;
+    position: absolute;
+    top: 50%;
+    width: 1.4vh;
+    transform: rotate(0deg) translateY(-5vh);
+    -webkit-transform: rotate(0deg) translateY(-5vh);
+    -ms-transform: rotate(0deg) translateY(-5vh);
+}
+
+.layout > .clock > .h-hand[data='1'] {
+    background-color: #444;
+}
+
+.layout > .clock > .h-hand[data='3'] {
+    background-color: #333;
+}
+
+.layout > .clock > .h-hand[data='4'] {
+    background-color: #5f5;
+}
+
+.layout > .clock > .m-hand {
+    background-color: #ddd;
+    border-radius: 50% 50% .4vh .4vh;
+    box-shadow: 0 0 0 .18vh #000;
+    height: 24vh;
+    left: 50%;
+    margin: -12vh -.5vh;
+    position: absolute;
+    top: 50%;
+    width: 1vh;
+    transform: rotate(0deg) translateY(-5vh);
+    -webkit-transform: rotate(0deg) translateY(-5vh);
+    -ms-transform: rotate(0deg) translateY(-5vh);
+}
+
+.layout > .clock > .m-hand[data='1'] { background-color: #444; }
+.layout > .clock > .m-hand[data='3'] { background-color: #333; }
+.layout > .clock > .m-hand[data='4'] { background-color: #0c0; }
+
+.layout > .clock > .s-hand {
+    background-color: #f77;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 0 0 0 .18vh #000;
+    height: 30vh;
+    left: 50%;
+    margin: -15vh -.2vh;
+    position: absolute;
+    top: 50%;
+    width: .4vh;
+    transform: rotate(0deg) translateY(-5vh);
+    -webkit-transform: rotate(0deg) translateY(-5vh);
+    -ms-transform: rotate(0deg) translateY(-5vh);
+}
+
+.layout > .clock > .s-hand[data='1'] { background-color: #444; }
+.layout > .clock > .s-hand[data='3'] { background-color: #333; }
+.layout > .clock > .s-hand[data='4'] { background-color: #5f5; }
+
+.layout > .clock > .top {
+    background-color: #f77;
+    border-radius: 50%;
+    box-shadow: 0 0 0 .2vh #222;
+    height: 3vh;
+    left: 50%;
+    margin: -1.5vh;
+    position: absolute;
+    top: 50%;
+    width: 3vh;
+}
+
+.layout > .clock > .top[data='1'] { background-color: #777; }
+.layout > .clock > .top[data='3'] { background-color: #333; }
+.layout > .clock > .top[data='4'] { background-color: #000; }
