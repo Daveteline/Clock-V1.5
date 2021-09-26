@@ -69,10 +69,10 @@ select {
     background-color: #eee;
     border-radius: 50%;
     box-shadow: 0 0 0 2vh #000, 0 0 2vh #000 inset;
-    height: 45vh;
+    height: 43vh;
     margin: auto;
     position: relative;
-    width: 45vh;
+    width: 43vh;
 }
 
 .layout > .clock[data='1'] {
@@ -95,7 +95,7 @@ select {
     display: block;
     height: 1vh;
     left: 50%;
-    margin: -.5vh -.2vh;
+    margin: -.6vh -.2vh;
     position: absolute;
     top: 50%;
     width: .4vh;
@@ -108,7 +108,7 @@ select {
 
 .layout > .clock > .digi m {
     display: block;
-    font-size: 3.8vh;
+    font-size: 3.5vh;
     font-weight: 300;
     height: 1vh;
     left: 50%;
@@ -200,9 +200,9 @@ select {
     background-color: #f77;
     border-radius: 50% 50% 0 0;
     box-shadow: 0 0 0 .18vh #000;
-    height: 30vh;
+    height: 27vh;
     left: 50%;
-    margin: -15vh -.2vh;
+    margin: -13.5vh -.2vh;
     position: absolute;
     top: 50%;
     width: .4vh;
