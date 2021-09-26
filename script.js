@@ -66,14 +66,14 @@ function createMarks() {
     var a = g('mks')
     for(var b = 0; b < 60; b++) {
         if(b % 5 != 0) {
-            a.innerHTML += '<m style="transform: rotate(' + (b * 6) + 'deg) translateY(-21vh); -webkit-transform: rotate(' + (b * 6) + 'deg) translateY(-21vh); -ms-transform: rotate(' + (b * 6) + 'deg) translateY(-21vh);"></m>'
+            a.innerHTML += '<m style="transform: rotate(' + (b * 6) + 'deg) translateY(-20vh); -webkit-transform: rotate(' + (b * 6) + 'deg) translateY(-20vh); -ms-transform: rotate(' + (b * 6) + 'deg) translateY(-20vh);"></m>'
         }
     }
 }
 
 // Number
 function createNumbers() {
-    var a = ['9.1vh, -18.5vh', '16.2vh, -11.4vh', '19vh, -1.75vh', '16.1vh, 8vh', '8.9vh, 15.1vh', '-.8vh, 17.7vh', '-10.7vh, 15.1vh', '-18vh, 8vh', '-20.8vh, -1.75vh', '-18.2vh, -11.1vh', '-11.2vh, -18.2vh', '-2vh, -21vh']
+    var a = ['8.5vh, -17.9vh', '15.2vh, -11.5vh', '17.8vh, -2.2vh', '15.3vh, 7.1vh', '8.5vh, 13.8vh', '-.8vh, 16.4vh', '-10vh, 14.1vh', '-17.3vh, 7.1vh', '-19.9vh, -2.2vh', '-17.5vh, -11.5vh', '-10.8vh, -17.8vh', '-2vh, -20.4vh']
     var b = g('mkn')
     for(var c = 0; c < 12; c++) {
         b.innerHTML += '<m style="transform: translate(' + a[c] + '); -webkit-transform: translate(' + a[c] + '); -ms-transform: translate(' + a[c] + ');">' + (1 + c) + '</m>'
